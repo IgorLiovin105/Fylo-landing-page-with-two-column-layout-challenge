@@ -15,3 +15,53 @@ $light-gray: hsl(0, 0%, 75%);
 
 $raleway: 'Raleway', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
+
+// header
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    &__container {
+        height: 200px;
+        max-width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-left: 70px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $vary-dark-blue;
+        font-family: $open-sans;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__logo,
+    .header__logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .menu__item {
+        margin-left: 1em;
+    }
+}
