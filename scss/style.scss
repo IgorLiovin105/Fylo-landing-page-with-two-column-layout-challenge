@@ -314,6 +314,7 @@ $open-sans: 'Open Sans', sans-serif;
 
         &__title {
             text-align: center;
+            font-size: 25px;
         }
 
         &__link {
@@ -411,6 +412,10 @@ $open-sans: 'Open Sans', sans-serif;
         &__title,
         &__text {
             text-align: center;
+        }
+
+        &__title {
+            font-size: 25px;
         }
 
         &__text {

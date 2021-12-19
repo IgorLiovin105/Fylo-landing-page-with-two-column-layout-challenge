@@ -428,6 +428,7 @@ input:focus {
   }
   .second__title {
     text-align: center;
+    font-size: 25px;
   }
   .second__link {
     margin: 70px 0;
@@ -529,6 +530,9 @@ input:focus {
   }
   .reg__title, .reg__text {
     text-align: center;
+  }
+  .reg__title {
+    font-size: 25px;
   }
   .reg__text {
     margin: 25px 0 35px 0;
