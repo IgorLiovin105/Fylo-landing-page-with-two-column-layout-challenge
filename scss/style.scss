@@ -335,6 +335,7 @@ $open-sans: 'Open Sans', sans-serif;
 // reg
 
 .reg {
+    width: 100%;
     padding: 100px 0;
     background: $desaturated-blue;
 
@@ -405,7 +406,10 @@ $open-sans: 'Open Sans', sans-serif;
 
         &__title,
         &__text {
+            width: 100%;
+            padding: 0 25px;
             text-align: center;
+            white-space: wrap;
         }
 
         &__text {

@@ -445,6 +445,7 @@ input:focus {
 }
 
 .reg {
+  width: 100%;
   padding: 100px 0;
   background: #585989;
 }
@@ -524,7 +525,10 @@ input:focus {
             flex-direction: column;
   }
   .reg__title, .reg__text {
+    width: 100%;
+    padding: 0 25px;
     text-align: center;
+    white-space: wrap;
   }
   .reg__text {
     margin: 25px 0 35px 0;
