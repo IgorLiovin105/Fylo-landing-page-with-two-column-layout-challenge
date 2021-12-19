@@ -92,7 +92,7 @@ $open-sans: 'Open Sans', sans-serif;
     }
 }
 
-// first
+// first block
 
 .first {
     padding-top: 300px;
@@ -158,6 +158,8 @@ $open-sans: 'Open Sans', sans-serif;
 
 @media (max-width: 991px) {
     .first {
+        background: url("../img/bg-curve-mobile.svg") bottom no-repeat;
+        background-size: 100%;
         padding-top: 200px;
         padding-bottom: 150px;
 
@@ -188,6 +190,8 @@ $open-sans: 'Open Sans', sans-serif;
         }
     }
 }
+
+// second block
 
 .second {
     padding-bottom: 150px;
@@ -416,6 +420,129 @@ $open-sans: 'Open Sans', sans-serif;
         &__input,
         &__button {
             width: 70%;
+        }
+    }
+}
+
+.footer {
+    background: $vary-dark-blue;
+    padding: 100px 0;
+
+    &__logo {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        max-width: 1250px;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        margin: 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: $open-sans;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        transition: all ease 0.3s;
+
+        &:hover {
+            color: $bright-blue;
+        }
+
+        & img {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    &__email {
+        margin-top: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: $open-sans;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        transition: all ease 0.3s;
+
+        &:hover {
+            color: $bright-blue;
+        }
+
+        & img {
+            width: 20px;
+            height: 15px;
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: $open-sans;
+        font-weight: 400;
+        margin-bottom: 20px;
+        transition: all ease 0.3s;
+
+        &:hover {
+            color: $bright-blue;
+        }
+        
+        &__img {
+            width: 50px;
+            margin: 0 10px;
+
+            &:last-child {
+                border-radius: none;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+    }
+}
+
+.copyright {
+    margin-top: 50px;
+    font-family: $raleway;
+    text-align: center;
+    color: $light-gray;
+    font-size: 18px;
+
+    & a {
+        color: $light-gray;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 50px 0;
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 30px 0;
+        }
+
+        &__links {
+            justify-content: center;
         }
     }
 }
