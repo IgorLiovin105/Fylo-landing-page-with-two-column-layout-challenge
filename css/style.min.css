@@ -518,6 +518,9 @@ input:focus {
   .reg {
     padding: 70px 0;
   }
+  .reg__item {
+    width: 100%;
+  }
   .reg__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -525,10 +528,7 @@ input:focus {
             flex-direction: column;
   }
   .reg__title, .reg__text {
-    width: 100%;
-    padding: 0 25px;
     text-align: center;
-    white-space: wrap;
   }
   .reg__text {
     margin: 25px 0 35px 0;
