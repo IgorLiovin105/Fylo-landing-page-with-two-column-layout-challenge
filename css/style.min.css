@@ -429,6 +429,7 @@ input:focus {
   .second__title {
     text-align: center;
     font-size: 25px;
+    margin: 40px 0 40px 0;
   }
   .second__link {
     margin: 70px 0;
