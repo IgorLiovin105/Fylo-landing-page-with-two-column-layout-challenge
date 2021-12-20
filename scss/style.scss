@@ -307,6 +307,10 @@ $open-sans: 'Open Sans', sans-serif;
     .second {
         padding-top: 100px;
 
+        &__img {
+            padding-top: 40px;
+        }
+
         &__container {
             flex-direction: column-reverse;
             align-items: center;
@@ -315,6 +319,7 @@ $open-sans: 'Open Sans', sans-serif;
         &__title {
             text-align: center;
             font-size: 25px;
+            margin: 40px 0 40px 0;
         }
 
         &__link {
